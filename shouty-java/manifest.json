@@ -1,0 +1,13 @@
+{
+  "visible_filenames": [
+    "Coordinate.java",
+    "CoordinateTest.java",
+    "RunCukesTest.java",
+    "ShoutSteps.java",
+    "Shouty.java",
+    "cyber-dojo.sh",
+    "hear_shout.feature"
+  ],
+  "image_name": "cyberdojofoundation/java_cucumber_pico",
+  "tab_size": 4
+}

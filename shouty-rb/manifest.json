@@ -1,0 +1,20 @@
+{
+  "visible_filenames": [
+    "cyber-dojo.sh",
+    "coordinate_spec.rb",
+    "coordinate.rb",
+    "env.rb",
+    "hear_shout.feature",
+    "shout_steps.rb",
+    "shouty.rb",
+    "spec_helper.rb",
+    "hiker.feature",
+    "hiker.rb",
+    "hiker_stepdefs.rb",
+    "instructions"
+  ],
+  "display_name": "Ruby, Cucumber",
+  "image_name": "cyberdojofoundation/ruby_cucumber",
+  "filename_extension": ".rb",
+  "tab_size": 2
+}

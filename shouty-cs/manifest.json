@@ -1,0 +1,15 @@
+{
+  "visible_filenames": [
+    "Coordinate.cs",
+    "CoordinateTest.cs",
+    "HearShout.feature",
+    "RunTests.dll.config",
+    "ShoutSteps.cs",
+    "ShoutyNetwork.cs",
+    "cyber-dojo.sh"
+  ],
+  "display_name": "C#, SpecFlow",
+  "image_name": "cyberdojofoundation/csharp_specflow",
+  "filename_extension": ".cs",
+  "tab_size": 4
+}
