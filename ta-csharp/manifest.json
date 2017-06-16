@@ -21,7 +21,7 @@
     "UnitTests.cs",
     "zzz_DoNotReadMe.cs"
   ],
-  "display_name": "C#, NUnit",
+  "display_name": "Testable Architecture, C#",
   "image_name": "cyberdojofoundation/csharp_nunit",
   "filename_extension": ".cs",
   "tab_size": 4

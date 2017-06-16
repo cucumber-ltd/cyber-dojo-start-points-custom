@@ -6,9 +6,10 @@
     "ShoutSteps.java",
     "Shouty.java",
     "cyber-dojo.sh",
+    "cucumber.xml",
     "hear_shout.feature"
   ],
-  "display_name": "Java, Cucumber-Spring",
+  "display_name": "Shouty, Java",
   "image_name": "cyberdojofoundation/java_cucumber_spring",
   "filename_extension": ".java",
   "tab_size": 4

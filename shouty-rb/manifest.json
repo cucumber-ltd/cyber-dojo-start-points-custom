@@ -13,7 +13,7 @@
     "hiker_stepdefs.rb",
     "instructions"
   ],
-  "display_name": "Ruby, Cucumber",
+  "display_name": "Shouty, Ruby",
   "image_name": "cyberdojofoundation/ruby_cucumber",
   "filename_extension": ".rb",
   "tab_size": 2

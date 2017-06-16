@@ -8,7 +8,7 @@
     "ShoutyNetwork.cs",
     "cyber-dojo.sh"
   ],
-  "display_name": "C#, SpecFlow",
+  "display_name": "Shouty, C#",
   "image_name": "cyberdojofoundation/csharp_specflow",
   "filename_extension": ".cs",
   "tab_size": 4
