@@ -3,11 +3,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FakeStatsServiceBuilder {
+public class FakeRevenueProviderBuilder {
     private String defaultCustomerData = "19,123456.78;22,123456.78;57,123456.78";
     private Map<Integer,Double> builderData = null;
 
-    public StatsService build() {
+    public RevenueProvider build() {
         String initialisationData = "";
 
         if (builderData == null) {
@@ -20,10 +20,10 @@ public class FakeStatsServiceBuilder {
                 separator = ";";
             }
         }
-        return new FakeStatsService(initialisationData);
+        return new FakeRevenueProvider(initialisationData);
     }
 
-    public FakeStatsServiceBuilder withCustomerRevenue(int id, double revenue) {
+    public FakeRevenueProviderBuilder withCustomerRevenue(int id, double revenue) {
         if (builderData == null) {
           builderData = new HashMap<Integer,Double>();
         }

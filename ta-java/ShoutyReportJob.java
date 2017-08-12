@@ -3,8 +3,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-// import shouty.reporting.fakes.FakeStatsService;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 class ShoutyReportJob {
     public static void main(String[] args) throws IOException {
@@ -12,17 +12,17 @@ class ShoutyReportJob {
         List<MileageClaim> mileageClaims = readMileageClaims(path);
 
         ShoutyReportProcessor job = new ShoutyReportProcessor(mileageClaims);
-        job.process();
+        writeEcoStatReport(job.process());
     }
 
 /*
     private static StatsService createStatsService() {
         if (System.getenv().get("FAKE_INITIALISATION_DATA") != null) {
-            return new FakeStatsService(
+            return new FakeRevenueProvider(
                 System.getenv().get("FAKE_INITIALISATION_DATA"));
         }
 
-        return new ProductionStatsService();
+        return new ProductionRevenueProvider();
     }
 */
 
@@ -35,5 +35,21 @@ class ShoutyReportJob {
             mileageClaims.add(new MileageClaim(values[0], Integer.parseInt(values[1]), Integer.parseInt(values[2])));
         }
         return mileageClaims;
+    }
+
+
+    private static void writeEcoStatReport(List<EcoStat> results) {
+        Document doc = XmlHelper.newDocument();
+        Element ecoReport = doc.createElement("ecoReport");
+        doc.appendChild(ecoReport);
+
+        for (EcoStat stat : results) {
+            Element node = doc.createElement("ecoStat");
+            node.setAttribute("SalespersonName", stat.salesPersonName);
+            node.setAttribute("RevenuePerMile", String.valueOf(stat.revenuePerMile));
+            ecoReport.appendChild(node);
+        }
+
+        XmlHelper.write(doc, "report.xml");
     }
 }

@@ -1,3 +1,3 @@
-public interface StatsService {
+public interface RevenueProvider {
     double getRevenue(int customerID);
 }

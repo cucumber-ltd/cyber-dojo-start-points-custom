@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -16,6 +17,12 @@ import java.util.List;
 import java.util.Map;
 
 public class EndToEndTests {
+    @Before
+    public void set_up() throws Exception {
+        File report = new File("report.xml");
+        Files.deleteIfExists(report.toPath());
+    }
+
     @Test
     public void single_sales_person() throws Exception {
         // run report

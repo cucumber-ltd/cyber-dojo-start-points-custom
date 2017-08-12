@@ -1,6 +1,6 @@
 import org.w3c.dom.Document;
 
-public class ProductionStatsService implements StatsService {
+public class ProductionRevenueProvider implements RevenueProvider {
     private ShoutyStatsService service = new ShoutyStatsService();
 
     public double getRevenue(int customerID) {

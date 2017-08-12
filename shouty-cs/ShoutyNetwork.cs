@@ -14,12 +14,12 @@ namespace Shouty
 
         public void SetLocation(string personName, Coordinate coordinate)
         {
-            locationsByPerson.Add(personName, coordinate);
+            locationsByPerson[personName] = coordinate;
         }
 
         public void Shout(string shouterName, string message)
         {
-            messagesByPerson.Add(shouterName, message);
+            messagesByPerson[shouterName] = message;
         }
 
         public IDictionary<string, string> GetMessagesHeardBy(string listenerName)

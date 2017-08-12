@@ -1,9 +1,9 @@
 set -e
-[ -f report.xml ] && rm report.xml
+export RELIABLE_CONNECTION
 export VOLATILE_STATS_DATA
 
 rm -f *.class
-CLASSES=.:`ls /junit/*.jar | tr '\n' ':'`:`ls *.jar | tr '\n' ':'`
+CLASSES=.:`ls /junit/*.jar | tr '\n' ':'`
 javac -Xlint:unchecked -Xlint:deprecation -cp $CLASSES  *.java
 if [ $? -eq 0 ]; then
   # run test classes even if they are inner classes

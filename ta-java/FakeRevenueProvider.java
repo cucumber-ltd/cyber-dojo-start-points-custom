@@ -1,10 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class FakeStatsService implements StatsService {
+public class FakeRevenueProvider implements RevenueProvider {
     Map<Integer, Double> revenueData = new HashMap<>();
 
-    public FakeStatsService(String data) {
+    public FakeRevenueProvider(String data) {
         for (String tuple : data.split(";")) {
             String[] pair = tuple.split(",");
             revenueData.put(Integer.parseInt(pair[0]), Double.parseDouble(pair[1]));

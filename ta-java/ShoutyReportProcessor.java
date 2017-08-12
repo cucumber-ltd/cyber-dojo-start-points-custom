@@ -1,5 +1,4 @@
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 
 import java.util.List;
 
@@ -11,10 +10,8 @@ class ShoutyReportProcessor {
         this.mileageClaims = mileageClaims;
     }
 
-    public void process() {
-        Document doc = XmlHelper.newDocument();
-        Element ecoReport = doc.createElement("ecoReport");
-        doc.appendChild(ecoReport);
+    public List<EcoStat> process() {
+        List<EcoStat> results = new ArrayList<EcoStat>();
 
         for (MileageClaim claim : mileageClaims) {
             String requestXml = "<Customer id=\"" + claim.customerID + "\"/>";
@@ -24,13 +21,9 @@ class ShoutyReportProcessor {
             double revenue = Double.parseDouble(responseDocument.getDocumentElement().getAttribute("revenue"));
             float revenuePerMile = (float) revenue / (float) claim.miles;
 
-            Element node = doc.createElement("ecoStat");
-            node.setAttribute("SalespersonName", claim.name);
-            node.setAttribute("RevenuePerMile", String.valueOf(revenuePerMile));
-            ecoReport.appendChild(node);
+            results.add(new EcoStat(claim.name, revenuePerMile));
         }
 
-
-        XmlHelper.write(doc, "report.xml");
+        return results;
     }
 }
