@@ -1,6 +1,7 @@
 set -e
 export RELIABLE_CONNECTION
 export VOLATILE_STATS_DATA
+export FAKE_INITIALISATION_DATA # ="19,123456.78;22,123456.78;57,123456.78"
 
 rm -f *.class
 CLASSES=.:`ls /junit/*.jar | tr '\n' ':'`
