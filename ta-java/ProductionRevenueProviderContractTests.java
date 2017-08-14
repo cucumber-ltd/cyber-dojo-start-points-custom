@@ -4,7 +4,7 @@ public class ProductionRevenueProviderContractTests
     public ProductionRevenueProviderContractTests() {}
 
     @Override
-    protected ProductionRevenueProvider createInstance(){
+    protected ProductionRevenueProvider getRevenueProvider(){
         return new ProductionRevenueProvider();
     }
 }

@@ -7,11 +7,11 @@ public abstract class RevenueProviderContract {
 
   private RevenueProvider revenueProvider;
 
-  protected abstract RevenueProvider createInstance();
+  protected abstract RevenueProvider getRevenueProvider();
 
   @Before
   public void setUp() {
-    revenueProvider = createInstance();
+    revenueProvider = getRevenueProvider();
   }
 
   @Test

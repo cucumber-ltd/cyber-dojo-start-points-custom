@@ -16,7 +16,7 @@ class ShoutyReportJob {
     }
 
 /*
-    private static StatsService createStatsService() {
+    private static RevenueProvider createRevenueProvider() {
         if (System.getenv().get("FAKE_INITIALISATION_DATA") != null) {
             return new FakeRevenueProvider(
                 System.getenv().get("FAKE_INITIALISATION_DATA"));

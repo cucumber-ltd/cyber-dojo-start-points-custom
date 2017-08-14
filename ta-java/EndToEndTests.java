@@ -52,10 +52,6 @@ public class EndToEndTests {
     private void run(String mainClass, String args) throws Exception {
         String[] command = {"java", "-cp", ".", mainClass, args};
         ProcessBuilder processBuilder = new ProcessBuilder(command);
-        // processBuilder.environment().put(
-        //     "FAKE_INITIALISATION_DATA",
-        //     "19,123456.78;22,123456.78;57,123456.78"
-        // );
         processBuilder.inheritIO();
         Process process = processBuilder.start();
         process.waitFor();
