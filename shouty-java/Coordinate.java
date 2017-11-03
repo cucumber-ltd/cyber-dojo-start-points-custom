@@ -8,14 +8,9 @@ public class Coordinate {
   }
 
   public int distanceFrom(Coordinate other){
-// TODO Actually calculate distance
+    // TODO: actually calculate distance beteen the coordinates.
+    //       e.g. return Math.abs(x - other.x);
+
     return 0;
-
-
-// Maybe Pythagoras might be able to help...?
-//  int xDiff = x - other.x;
-//  int yDiff = y - other.y;
-
-//  return (int) Math.sqrt(Math.pow(xDiff, 2) + Math.pow(yDiff, 2));
   }
 }

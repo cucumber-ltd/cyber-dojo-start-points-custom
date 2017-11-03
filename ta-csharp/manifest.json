@@ -24,5 +24,6 @@
   "display_name": "Testable Architecture, C#",
   "image_name": "cyberdojofoundation/csharp_nunit",
   "filename_extension": ".cs",
+  "runner_choice": "stateless",
   "tab_size": 4
 }

@@ -26,5 +26,6 @@
   "display_name": "Testable Architecture, Java",
   "image_name": "cyberdojofoundation/java_junit",
   "filename_extension": ".java",
+  "runner_choice": "stateless",
   "tab_size": 4
 }
