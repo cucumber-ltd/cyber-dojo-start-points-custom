@@ -8,9 +8,6 @@
     "shout_steps.rb",
     "shouty.rb",
     "spec_helper.rb",
-    "hiker.feature",
-    "hiker.rb",
-    "hiker_stepdefs.rb",
     "instructions"
   ],
   "display_name": "Shouty, Ruby",
