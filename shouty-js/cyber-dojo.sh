@@ -11,6 +11,9 @@
 #NODE_VERSION=8.2.1
 NODE_VERSION=8.4.0
 
+n use ${NODE_VERSION} /usr/local/lib/node_modules/jasmine/bin/jasmine \
+  JASMINE_CONFIG_PATH=./jasmine.json
+
 # You have to cd to a specific folder because
 #   ~/node_modules/cucumber/bin/cucumber.js
 # contains the line
