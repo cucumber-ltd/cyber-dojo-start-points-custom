@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var Coordinate = require('../lib/coordinate');
+var Coordinate = require('./coordinate');
 
 describe("coordinate class", () => {
 

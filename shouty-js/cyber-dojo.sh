@@ -5,11 +5,23 @@
 #
 # set the version to use:
 #NODE_VERSION=0.12.7
-NODE_VERSION=4.2.1
-#
-# Use npm package 'n' to call jasmine and jshint with selected node version:
-if [ -f .jshintrc ]
-  then
-    n use $NODE_VERSION /usr/lib/node_modules/jshint/bin/jshint --config .jshintrc *.js
-fi
-n use $NODE_VERSION /usr/local/lib/node_modules/cucumber/bin/cucumber.js --format-options '{"colorsEnabled":false}' *.feature
+#NODE_VERSION=4.1.1
+#NODE_VERSION=4.2.1
+#NODE_VERSION=6.11.1
+#NODE_VERSION=8.2.1
+NODE_VERSION=8.4.0
+
+# You have to cd to a specific folder because
+#   ~/node_modules/cucumber/bin/cucumber.js
+# contains the line
+# require('../lib/cli/run.js').default();
+# Go figure!
+
+cd ~/node_modules/cucumber/bin
+
+export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
+
+n use ${NODE_VERSION} \
+  ./cucumber.js \
+  --format-options '{"colorsEnabled":false}' \
+  /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
