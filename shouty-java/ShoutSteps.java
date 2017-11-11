@@ -24,11 +24,11 @@ public class ShoutSteps {
 
     @Then("^Lucy should hear him$")
     public void lucyShouldHearHim() throws Throwable {
-        Assert.assertEquals(1, shouty.getMessagesHeardBy("Lucy").size());
+        Assert.assertEquals(1, shouty.getShoutsHeardBy("Lucy").size());
     }
 
     @Then("^Lucy should hear nothing$")
     public void lucy_should_hear_nothing() throws Throwable {
-        Assert.assertEquals(0, shouty.getMessagesHeardBy("Lucy").size());
+        Assert.assertEquals(0, shouty.getShoutsHeardBy("Lucy").size());
     }
 }

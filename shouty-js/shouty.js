@@ -1,28 +1,31 @@
 module.exports = function Shouty() {
   const MESSAGE_RANGE = 1000
   this.locations = {}
-  this.messages = {}
+  this.shouts = {}
 
   this.setLocation = function(person, coordinate) {
     this.locations[person] = coordinate
   }
 
-  this.shout = function(person, message) {
-    this.messages[person] = message
+  this.shout = function(person, shout) {
+    if(!(person in this.shouts)) {
+      this.shouts[person] = []
+    }
+    this.shouts[person].push(shout)
   }
 
-  this.getMessagesHeardBy = function(listener) {
-    var result = {}
+  this.getShoutsHeardBy = function(listener) {
+    var shoutsHeard = {}
 
-    Object.keys(this.messages).forEach(shouter => {
-        var message = this.messages[shouter]
+    Object.keys(this.shouts).forEach(shouter => {
+        var personsShouts = this.shouts[shouter]
         var distance = this.locations[listener].distanceFrom(this.locations[shouter])
 
         if(distance < MESSAGE_RANGE) {
-          result[shouter] = message
+          shoutsHeard[shouter] = personsShouts
         }
     })
 
-    return result
+    return shoutsHeard
   }
 };

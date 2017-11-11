@@ -32,13 +32,13 @@ namespace Shouty.Specs
         [Then(@"Lucy should hear Sean")]
         public void ThenLucyShouldHearSean()
         {
-            Assert.AreEqual(1, shouty.GetMessagesHeardBy("Lucy").Count);
+            Assert.AreEqual(1, shouty.GetShoutsHeardBy("Lucy").Count);
         }
 
         [Then(@"Lucy should hear nothing")]
         public void ThenLucyShouldHearNothing()
         {
-            Assert.AreEqual(0, shouty.GetMessagesHeardBy("Lucy").Count);
+            Assert.AreEqual(0, shouty.GetShoutsHeardBy("Lucy").Count);
         }
     }
 }

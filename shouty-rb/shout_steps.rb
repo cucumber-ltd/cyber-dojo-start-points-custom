@@ -19,9 +19,9 @@ When(/^Sean shouts$/) do
 end
 
 Then(/^Lucy should hear Sean$/) do
-  expect(@shouty.messages_heard_by("Lucy").length).to eq(1)
+  expect(@shouty.shouts_heard_by("Lucy").length).to eq(1)
 end
 
 Then(/^Lucy should hear nothing$/) do
-  expect(@shouty.messages_heard_by("Lucy")).to eq({})
+  expect(@shouty.shouts_heard_by("Lucy")).to eq({})
 end

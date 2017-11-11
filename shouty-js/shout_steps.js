@@ -24,12 +24,12 @@ defineSupportCode(function({Given, When, Then}) {
   });
 
   Then(/^Lucy should hear Sean$/, function (callback) {
-    assert.equal(Object.keys(shouty.getMessagesHeardBy('Lucy')).length, 1)
+    assert.equal(Object.keys(shouty.getShoutsHeardBy('Lucy')).length, 1)
     callback()
   });
 
   Then(/^Lucy should hear nothing$/, function (callback) {
-    assert.equal(Object.keys(shouty.getMessagesHeardBy('Lucy')).length, 0)
+    assert.equal(Object.keys(shouty.getShoutsHeardBy('Lucy')).length, 0)
     callback()
   });
 

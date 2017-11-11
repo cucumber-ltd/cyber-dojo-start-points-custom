@@ -10,9 +10,17 @@ describe("coordinate class", () => {
 
   it("should calculate the distance from another coordinate along X axis", ()=>{
     var a = new Coordinate(0, 0);
-    var b = new Coordinate(1000, 0);
+    var b = new Coordinate(600, 0);
 
-    assert.equal(a.distanceFrom(b), 1000)
+    assert.equal(a.distanceFrom(b), 600)
 
   })
+
+  // it("should calculate the distance from another coordinate", ()=>{
+  //   var a = new Coordinate(0, 0);
+  //   var b = new Coordinate(300, 400);
+  //
+  //   assert.equal(a.distanceFrom(b), 500)
+  //
+  // })
 })

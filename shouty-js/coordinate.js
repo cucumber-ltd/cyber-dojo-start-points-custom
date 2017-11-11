@@ -2,7 +2,8 @@ module.exports = function Coordinate(x, y) {
 
   this.distanceFrom = function(other) {
 
-    // TODO: actually caluculate distance. I think we need to use pythagoras' theorem?
+    // TODO: actually calculate distance beteen the coordinates.
+    //       e.g. return Math.abs(x - other.x);
     return 0
   }
 };
