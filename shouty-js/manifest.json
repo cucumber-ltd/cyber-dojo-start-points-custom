@@ -1,6 +1,5 @@
 {
   "visible_filenames": [
-    ".jshintrc",
     "coordinate.js",
     "coordinate.test.js",
     "hear_shout.feature",

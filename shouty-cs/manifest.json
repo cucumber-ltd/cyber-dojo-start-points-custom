@@ -6,7 +6,8 @@
     "RunTests.dll.config",
     "ShoutSteps.cs",
     "ShoutyNetwork.cs",
-    "cyber-dojo.sh"
+    "cyber-dojo.sh",
+    "specflow.json"
   ],
   "display_name": "Shouty, C#",
   "image_name": "cyberdojofoundation/csharp_specflow",
