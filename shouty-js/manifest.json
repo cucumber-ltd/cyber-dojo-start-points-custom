@@ -7,7 +7,7 @@
     "shouty.js",
     "world.js",
     "cyber-dojo.sh",
-    "instructions"
+    "jasmine.json"
   ],
   "display_name": "Shouty, Javascript",
   "image_name": "cyberdojofoundation/javascript-node_cucumber_jasmine",
