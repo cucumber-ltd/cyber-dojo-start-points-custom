@@ -1,10 +1,6 @@
-'use strict';
-
-var {defineSupportCode} = require('cucumber');
+const { setWorldConstructor } = require('cucumber')
 
 function CustomWorld() {
 }
 
-defineSupportCode(function({setWorldConstructor}) {
-  setWorldConstructor(CustomWorld);
-});
+setWorldConstructor(CustomWorld)
