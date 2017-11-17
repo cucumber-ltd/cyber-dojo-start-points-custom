@@ -4,6 +4,8 @@
     "coordinate.test.js",
     "hear_shout.feature",
     "shout_steps.js",
+    "shouty_hooks.js",
+    "parameter_types.js",
     "shouty.js",
     "world.js",
     "cyber-dojo.sh",
