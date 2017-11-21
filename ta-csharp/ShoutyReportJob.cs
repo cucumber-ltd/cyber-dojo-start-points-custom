@@ -1,5 +1,6 @@
-﻿using System.IO;
+using System.IO;
 using System.Collections.Generic;
+using System.Xml;
 
 class ShoutyReportJob
 {
@@ -9,11 +10,11 @@ class ShoutyReportJob
         var mileageClaims = ReadMileageClaims(path);
 
         var job = new ShoutyReportProcessor(mileageClaims);
-        job.Process();
+        WriteEcoStatReport(job.Process());
     }
 
         /*
-        private static IStatsService CreateStatsService()
+        private static IRevenueProvider CreateStatsService()
         {
             if (System.Environment.GetEnvironmentVariable("FAKE_INITIALISATION_DATA") != null)
             {
@@ -21,7 +22,7 @@ class ShoutyReportJob
                     System.Environment.GetEnvironmentVariable("FAKE_INITIALISATION_DATA"));
             }
 
-            return new ProductionStatsService(new ShoutyStatsService());
+            return new ProductionRevenueProvider(new ShoutyStatsService());
         }
         */
 
@@ -37,5 +38,21 @@ class ShoutyReportJob
             }
         }
         return mileageClaims;
+    }
+
+    private static void WriteEcoStatReport(List<EcoStat> results)
+    {
+
+        XmlDocument reportXml = new XmlDocument();
+        reportXml.LoadXml("<?xml version=\"1.0\" encoding=\"UTF-8\"?><ecoReport/>");
+        foreach (var ecoStat in results)
+        {
+            XmlElement node = reportXml.CreateElement(string.Empty, "ecoStat", string.Empty);
+            node.SetAttribute("SalespersonName", ecoStat.SalesPersonName);
+            node.SetAttribute("RevenuePerMile", System.Convert.ToString(ecoStat.RevenuePerMile));
+            reportXml.DocumentElement.AppendChild(node);
+        }
+
+        reportXml.Save("report.xml");
     }
 }

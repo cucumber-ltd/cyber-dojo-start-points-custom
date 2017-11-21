@@ -47,10 +47,6 @@ public class EndToEndTests
         proc.EnableRaisingEvents = false;
         proc.StartInfo.FileName = exe;
         proc.StartInfo.Arguments = args;
-        // proc.StartInfo.EnvironmentVariables.Add(
-        //     "FAKE_INITIALISATION_DATA",
-        //     "19,123456.78;22,123456.78;57,123456.78"
-        // );
         proc.StartInfo.UseShellExecute = false;
         proc.Start();
         proc.WaitForExit();

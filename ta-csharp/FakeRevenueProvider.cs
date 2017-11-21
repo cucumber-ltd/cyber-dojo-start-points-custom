@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-public class FakeStatsService : IStatsService
+public class FakeRevenueProvider : IRevenueProvider
 {
     IDictionary<int, decimal> revenueData = new Dictionary<int, decimal>();
 
-    public FakeStatsService(string data)
+    public FakeRevenueProvider(string data)
     {
         foreach (var tuple in data.Split(';'))
         {

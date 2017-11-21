@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 
-public class FakeStatsServiceBuilder
+public class FakeRevenueProviderBuilder
 {
     private string defaultCustomerData = "19,123456.78;22,123456.78;57,123456.78";
     private Dictionary<int, double> builderData = null;
 
-    public IStatsService Build() 
+    public IRevenueProvider Build()
     {
         string initialisationData = "";
 
@@ -21,10 +21,10 @@ public class FakeStatsServiceBuilder
                 separator = ";";
             }
         }
-        return new FakeStatsService(initialisationData);
+        return new FakeRevenueProvider(initialisationData);
     }
 
-    public FakeStatsServiceBuilder WithCustomerRevenue(int id, double revenue)
+    public FakeRevenueProviderBuilder WithCustomerRevenue(int id, double revenue)
     {
         if (builderData == null)
         {
