@@ -1,7 +1,7 @@
 using System.IO;
 using System.Xml;
 
-public class ProductionStatsService : IStatsService
+public class ProductionRevenueProvider : IRevenueProvider
 {
     // private ShoutyStatsService service = new ShoutyStatsService();
 
