@@ -10,7 +10,7 @@
     "MileageClaim.cs",
     "MileageClaimCollectionBuilder.cs",
     "ProductionRevenueProviderContractTests.cs",
-    "ProductionStatsService.cs",
+    "ProductionRevenueProvider.cs",
     "RevenueProviderContract.cs",
     "ShoutyReportJob.cs",
     "ShoutyReportProcessor.cs",
