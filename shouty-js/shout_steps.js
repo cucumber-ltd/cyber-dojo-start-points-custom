@@ -7,23 +7,23 @@ defineSupportCode(function({Given, When, Then}) {
   const ARBITARY_MESSAGE = 'Hello, world'
   var shouty = new Shouty()
 
-  Given(/^Lucy is at (\d+), (\d+)$/, function (x, y) {
+  Given('Lucy is at {int}, {int}', function (x, y) {
     shouty.setLocation('Lucy', new Coordinate(x, y))
   })
 
-  Given(/^Sean is at (\d+), (\d+)$/, function (x, y) {
+  Given('Sean is at {int}, {int}', function (x, y) {
     shouty.setLocation('Sean', new Coordinate(x, y))
   })
 
-  When(/^Sean shouts$/, function () {
+  When('Sean shouts', function () {
     shouty.shout('Sean', ARBITARY_MESSAGE)
   })
 
-  Then(/^Lucy should hear Sean$/, function () {
+  Then('Lucy should hear Sean', function () {
     assert.equal(Object.keys(shouty.getShoutsHeardBy('Lucy')).length, 1)
   })
 
-  Then(/^Lucy should hear nothing$/, function () {
+  Then('Lucy should hear nothing', function () {
     assert.equal(Object.keys(shouty.getShoutsHeardBy('Lucy')).length, 0)
   })
 
