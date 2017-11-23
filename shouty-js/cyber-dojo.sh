@@ -14,9 +14,9 @@ cd ~/node_modules/cucumber/bin
 export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
 
 ./cucumber.js \
-  --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*steps.js \
-  --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*hooks.js \
-  --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*types.js \
-  --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/world.js \
+  --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/*steps.js \
+  --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/*hooks.js \
+  --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/*types.js \
+  --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/world.js \
   --format-options '{"colorsEnabled":false}' \
   /sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
