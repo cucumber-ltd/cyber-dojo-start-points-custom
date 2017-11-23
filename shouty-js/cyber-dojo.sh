@@ -19,4 +19,4 @@ export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
   --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*types.js \
   --require /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/world.js \
   --format-options '{"colorsEnabled":false}' \
-  /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
+  /sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
