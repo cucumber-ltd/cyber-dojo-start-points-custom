@@ -19,4 +19,5 @@ export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
   --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/*types.js \
   --require /sandboxes/$CYBER_DOJO_AVATAR_NAME/world.js \
   --format-options '{"colorsEnabled":false}' \
+  --format-options '{"snippetInterface":"synchronous"}' \
   /sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
