@@ -1,15 +1,13 @@
 {
   "visible_filenames": [
     "coordinate.js",
-    "coordinate.test.js",
-    "hear_shout.feature",
-    "shout_steps.js",
-    "shouty_hooks.js",
-    "parameter_types.js",
+    "tests/coordinate.test.js",
+    "features/hear_shout.feature",
+    "features/shout_steps.js",
     "shouty.js",
-    "world.js",
+    "features/world.js",
     "cyber-dojo.sh",
-    "jasmine.json"
+    "tests/jasmine.json"
   ],
   "display_name": "Shouty, Javascript",
   "image_name": "cyberdojofoundation/javascript-node_cucumber_jasmine",

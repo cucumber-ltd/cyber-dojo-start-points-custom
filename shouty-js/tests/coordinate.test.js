@@ -1,5 +1,5 @@
 var assert = require('assert')
-var Coordinate = require('./coordinate')
+var Coordinate = require('../coordinate')
 
 describe("coordinate class", () => {
 
