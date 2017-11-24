@@ -10,6 +10,7 @@ Feature: Hear Shout
 
   Scenario: Out of range shout is not heard
     Given Lucy is at 0, 0
-    And Sean is at 800, 800  # Sean is approximately 1130m from 0, 0
+    And Sean is at 800, 800
+    # This means Sean is approximately 1130m from Lucy
     When Sean shouts
     Then Lucy should hear nothing
