@@ -1,4 +1,4 @@
-require './shouty'
+require_relative 'shouty'
 
 ARBITRARY_MESSAGE = "Hello, world"
 
