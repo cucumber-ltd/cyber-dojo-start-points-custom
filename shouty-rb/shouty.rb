@@ -13,10 +13,7 @@ class Shouty
     end
 
     def shout(person, shout)
-      if (!@shouts.key?(person))
-        @shouts[person] = []
-      end
-
+      @shouts[person] ||= [ ]
       @shouts[person].push(shout)
     end
 
