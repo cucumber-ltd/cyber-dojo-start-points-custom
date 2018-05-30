@@ -4,7 +4,7 @@ import cucumber.api.SnippetType;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(strict=true, monochrome=true, plugin={ "pretty", "pretty, junit:/tmp/output" }, snippets=SnippetType.CAMELCASE)
+@CucumberOptions(strict=true, monochrome=true, plugin="junit:/tmp/output", snippets=SnippetType.CAMELCASE)
 public class RunCukesTest {
     // this is the adapter/bridge code
     // between cucumber jvm and junit
