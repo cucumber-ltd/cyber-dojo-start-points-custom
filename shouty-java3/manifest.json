@@ -11,7 +11,7 @@
     "hear_shout.feature"
   ],
   "display_name": "Shouty, Java",
-  "image_name": "cyberdojofoundation/java_cucumber_spring",
+  "image_name": "cyberdojofoundation/java_cucumber3_spring",
   "filename_extension": ".java",
   "runner_choice": "stateless",
   "tab_size": 4
