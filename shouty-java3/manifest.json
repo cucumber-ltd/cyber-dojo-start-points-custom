@@ -5,7 +5,7 @@
     "RunCukesTest.java",
     "ShoutSteps.java",
     "Shouty.java",
-    "ShoutyTypes.java"
+    "ShoutyTypes.java",
     "cyber-dojo.sh",
     "cucumber.xml",
     "hear_shout.feature"
