@@ -1,0 +1,17 @@
+{
+  "visible_filenames": [
+    "Coordinate.java",
+    "CoordinateTest.java",
+    "RunCukesTest.java",
+    "ShoutSteps.java",
+    "Shouty.java",
+    "cyber-dojo.sh",
+    "cucumber.xml",
+    "hear_shout.feature"
+  ],
+  "display_name": "Shouty, Java",
+  "image_name": "cyberdojofoundation/java_cucumber_spring",
+  "filename_extension": ".java",
+  "runner_choice": "stateless",
+  "tab_size": 4
+}
