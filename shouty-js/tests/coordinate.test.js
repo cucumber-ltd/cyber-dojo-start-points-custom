@@ -21,4 +21,8 @@ describe("coordinate class", () => {
   //
   //   assert.equal(a.distanceFrom(b), 500)
   // })
+
+  // Use this code to implement Pythagoras' theorem in coordinate.js:
+  //
+  // return Math.hypot(this.x - other.x, this.y - other.y)
 })

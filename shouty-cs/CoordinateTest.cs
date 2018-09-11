@@ -29,5 +29,13 @@ namespace Shouty.Tests
         //     Coordinate b = new Coordinate(300, 400);
         //     Assert.AreEqual(500, a.DistanceFrom(b));
         // }
+
+        // Use this code to implement Pythagoras' theorem in Coordinate.cs:
+        //
+        // return (int)Math.Sqrt(
+        //     Math.Pow(xCoord - other.xCoord, 2)
+        //     + Math.Pow(yCoord - other.yCoord, 2)
+        // );
+
     }
 }

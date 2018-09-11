@@ -21,4 +21,8 @@ public class CoordinateTest {
   //     Coordinate b = new Coordinate(300, 400);
   //     assertEquals(500, a.distanceFrom(b));
   // }
+
+  // Use this code to implement Pythagoras' theorem in Coordinate.java:
+  //
+  // return (int)Math.hypot(x - other.x, y - other.y);
 }

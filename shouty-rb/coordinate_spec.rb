@@ -17,4 +17,9 @@ describe Coordinate do
   #   b = Coordinate.new(300, 400)
   #   expect(a.distance_from(b)).to eq(500)
   # end
+
+  # Use this code to implement Pythagoras' theorem in coordinate.rb:
+  #
+  # Math.hypot(@x - other.x, @y - other.y)
+
 end
