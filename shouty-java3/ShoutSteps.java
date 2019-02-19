@@ -1,9 +1,13 @@
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.PendingException;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 import static java.util.Collections.emptyMap;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 
 public class ShoutSteps {
