@@ -12,6 +12,5 @@
   "display_name": "Shouty, Javascript",
   "image_name": "cyberdojofoundation/javascript-node_cucumber_jasmine",
   "filename_extension": ".js",
-  "runner_choice": "stateless",
   "tab_size": 2
 }

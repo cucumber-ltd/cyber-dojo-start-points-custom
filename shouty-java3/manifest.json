@@ -13,6 +13,5 @@
   "display_name": "Shouty, Java Cucumber 3",
   "image_name": "cyberdojofoundation/java_cucumber3_spring",
   "filename_extension": ".java",
-  "runner_choice": "stateless",
   "tab_size": 4
 }
