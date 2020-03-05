@@ -14,8 +14,9 @@ n use ${NODE_VERSION} /usr/local/lib/node_modules/jasmine/bin/jasmine \
 
 cd ~/node_modules/cucumber/bin
 
-export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
+export NODE_PATH=/home/cucumber/node_modules
 
+echo 
 echo CUCUMBER FEATURES
 echo =================
 
