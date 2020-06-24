@@ -1,34 +1,40 @@
-import org.junit.*;
+import io.cucumber.java.en.*;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.DataTableType;
+
 import static org.junit.Assert.*;
-import cucumber.api.java.en.*;
-import cucumber.api.PendingException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+
 
 public class ShoutSteps {
-    private final String ARBITRARY_MESSAGE = "Hello, world";
+    private static final String ARBITRARY_MESSAGE = "Hello, world";
     private final Shouty shouty = new Shouty();
 
-    @Given("^Lucy is at (\\d+), (\\d+)$")
-    public void lucyIsAt(int xCoord, int yCoord) throws Throwable {
+    @Given("Lucy is at {int}, {int}")
+    public void lucy_is_at(int xCoord, int yCoord) {
         shouty.setLocation("Lucy", new Coordinate(xCoord, yCoord));
     }
 
-    @Given("^Sean is at (\\d+), (\\d+)$")
-    public void seanIsAt(int xCoord, int yCoord) throws Throwable {
+    @Given("Sean is at {int}, {int}")
+    public void sean_is_at(int xCoord, int yCoord) {
         shouty.setLocation("Sean", new Coordinate(xCoord, yCoord));
     }
 
-    @When("^Sean shouts$")
-    public void seanShouts() throws Throwable {
+    @When("Sean shouts")
+    public void sean_shouts() {
         shouty.shout("Sean", ARBITRARY_MESSAGE);
     }
 
-    @Then("^Lucy should hear Sean$")
-    public void lucyShouldHearHim() throws Throwable {
-        Assert.assertEquals(1, shouty.getShoutsHeardBy("Lucy").size());
+    @Then("Lucy should hear Sean")
+    public void lucy_should_hear_sean() {
+        assertEquals(1, shouty.getShoutsHeardBy("Lucy").size());
     }
 
-    @Then("^Lucy should hear nothing$")
-    public void lucy_should_hear_nothing() throws Throwable {
-        Assert.assertEquals(0, shouty.getShoutsHeardBy("Lucy").size());
+    @Then("Lucy should not hear Sean")
+    public void lucy_should_not_hear_sean() {
+        assertEquals(emptyMap(), shouty.getShoutsHeardBy("Lucy"));
     }
 }
