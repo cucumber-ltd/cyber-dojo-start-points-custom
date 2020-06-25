@@ -10,7 +10,7 @@
     "CucumberSpringConfiguration.java",
     "hear_shout.feature"
   ],
-  "display_name": "Shouty, Java Cucumber",
+  "display_name": "Shouty, Java",
   "image_name": "cyberdojofoundation/java_cucumber_spring:adf3d2f",
   "filename_extension": ".java",
   "tab_size": 4
