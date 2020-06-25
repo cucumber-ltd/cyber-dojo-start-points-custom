@@ -33,8 +33,8 @@ public class ShoutSteps {
         assertEquals(1, shouty.getShoutsHeardBy("Lucy").size());
     }
 
-    @Then("Lucy should not hear Sean")
-    public void lucy_should_not_hear_sean() {
-        assertEquals(emptyMap(), shouty.getShoutsHeardBy("Lucy"));
+    @Then("Lucy should hear nothing")
+    public void lucy_should_hear_nothing() {
+        assertEquals(0, shouty.getShoutsHeardBy("Lucy").size());
     }
 }
