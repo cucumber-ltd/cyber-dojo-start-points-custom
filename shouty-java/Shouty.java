@@ -1,5 +1,4 @@
 import java.util.*;
-//import io.cucumber.spring.ScenarioScope;
 
 public class Shouty {
   private static final int MESSAGE_RANGE = 1000;
