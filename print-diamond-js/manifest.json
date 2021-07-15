@@ -1,0 +1,12 @@
+{
+  "visible_filenames": [
+    "print-diamond.js",
+    "tests/print-diamond.test.js",
+    "cyber-dojo.sh",
+    "tests/jasmine.json"
+  ],
+  "display_name": "PrintDiamond, Agile2021",
+  "image_name": "cyberdojofoundation/javascript-node_cucumber_jasmine",
+  "filename_extension": ".js",
+  "tab_size": 2
+}
