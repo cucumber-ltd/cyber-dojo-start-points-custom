@@ -10,8 +10,13 @@ describe('When the midpoint is', () => {
     expect(diamond.create('A')).toEqual("A\n");
   });
 
-  it('B, ...describe what you expect to be returned when the midpoint is B', () => {
-    expect(diamond.create('B')).toEqual("???");
+  /*
+  This could be your second test. Then again, you may choose a different path.
+  Edit or delete it as you see fit.
+
+  it('B, <describe what you expect to be returned when the midpoint is B>', () => {
+    expect(diamond.create('B')).toEqual("<what should be returned?>");
   });
+  */
 
 });
