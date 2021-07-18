@@ -8,7 +8,8 @@ describe('Print Diamond', () => {
   });
 
   it('B, three lines are output', () => {
-    expect(diamond.create('B')).toEqual([" A ",
+    expect(diamond.create('B')).toEqual([
+      " A ",
       "B B",
       " A "]);
   });
