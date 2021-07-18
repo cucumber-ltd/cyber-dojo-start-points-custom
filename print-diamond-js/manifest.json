@@ -1,7 +1,7 @@
 {
   "visible_filenames": [
-    "print-diamond.js",
-    "print-diamond.spec.js",
+    "diamond.js",
+    "diamond.spec.js",
     "cyber-dojo.sh",
     "jasmine.json",
     "README"
