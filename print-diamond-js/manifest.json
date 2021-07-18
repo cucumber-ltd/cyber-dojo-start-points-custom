@@ -3,7 +3,8 @@
     "print-diamond.js",
     "print-diamond.spec.js",
     "cyber-dojo.sh",
-    "jasmine.json"
+    "jasmine.json",
+    "README"
   ],
   "display_name": "PrintDiamond, Agile2021",
   "image_name": "cyberdojofoundation/javascript-node_cucumber_jasmine",
