@@ -8,10 +8,9 @@ function create(midpoint) {
   if (midpoint === 'A')
     return ["A"];
   else
-    return
-     [" A ",
-      "B B",
-      " A "];
+    return [" A ",
+            "B B",
+            " A "];
 }
 
 
