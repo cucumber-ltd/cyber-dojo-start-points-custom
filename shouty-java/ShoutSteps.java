@@ -1,6 +1,7 @@
 import io.cucumber.java.en.*;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.DataTableType;
+import io.cucumber.java.ParameterType;
 
 import static org.junit.Assert.*;
 
