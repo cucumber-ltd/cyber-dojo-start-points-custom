@@ -1,16 +1,14 @@
 {
   "visible_filenames": [
     "cyber-dojo.sh",
-    "coordinate_spec.rb",
-    "coordinate.rb",
-    "env.rb",
+    "CoordinateTest.py",
+    "Coordinate.py",
     "hear_shout.feature",
-    "shout_steps.rb",
-    "shouty.rb",
-    "spec_helper.rb"
+    "steps/ShoutSteps.py",
+    "Shouty.py"
   ],
-  "display_name": "Shouty, Ruby",
-  "image_name": "cyberdojofoundation/ruby_cucumber",
-  "filename_extension": ".rb",
-  "tab_size": 2
+  "display_name": "Shouty, Python",
+  "image_name": "cyberdojofoundation/python_behave",
+  "filename_extension": ".py",
+  "tab_size": 8
 }
